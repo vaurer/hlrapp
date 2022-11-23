@@ -1,7 +1,7 @@
 
 import './App.css';
 
-// import reiseFinden from './reiseFinden';
+import reiseFinden from './reiseFinden';
 function App() {
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function App() {
         <div id="hlrApp"></div>
         <p>after</p>
         <p>Results:</p>
-        <div id="hlrAppBooking"></div>
+        <reiseFinden/>
       </header>
     </div>
   );
