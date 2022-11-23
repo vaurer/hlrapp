@@ -5,7 +5,7 @@ function Results() {
         <div> 
             <header className="App-header">
                 <p>Results:</p>
-                <div id='hlrAppBooking'></div>
+                <div id="hlrAppBooking"></div>
               </header>
         </div>
         
