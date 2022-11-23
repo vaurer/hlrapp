@@ -20,6 +20,8 @@ function App() {
         <p>before</p>
         <div id="hlrApp"></div>
         <p>after</p>
+        <p>Results:</p>
+        <div id="hlrAppBooking"></div>
       </header>
     </div>
   );
