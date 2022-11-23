@@ -1,29 +1,26 @@
 
 import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./Home";
+// import Blogs from "./Blogs";
+// import Contact from "./Contact";
+// import NoPage from "./NoPage";
 
-import reiseFinden from './reiseFinden';
+// import reiseFinden from './reiseFinden';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>before</p>
-        <div id="hlrApp"></div>
-        <p>after</p>
-        <p>Results:</p>
-        <reiseFinden/>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          {/* <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
