@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import reiseFinden from './reiseFinden';
+// import reiseFinden from './reiseFinden';
 function App() {
   return (
     <div className="App">
